@@ -1,3 +1,7 @@
+@use './components/header/header.scss';
+@import './components/header/header.scss';
+@import './components/home/home.scss';
+
 .App {
   text-align: center;
 }
