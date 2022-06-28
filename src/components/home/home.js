@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Content, Form, Grid, Tile,Button } from "carbon-components-react";
+import iPi from "../../iPi-Logo.png";
+import { Content, Form, Grid, Tile, Button } from "carbon-components-react";
 import NavHeader from "../header/header";
+import "./home.scss";
 
 function Home() {
   return (
@@ -9,6 +11,7 @@ function Home() {
       <Content>
         <div>
           <Form className="form">
+            <img classname="logo" src={iPi} alt="ipi"></img>
             <Tile light={false}>
               <h3>ABOUT IPI</h3>
               <br />
@@ -39,14 +42,18 @@ function Home() {
             <br />
             <Tile>
               <h4>HOW IT WORKS</h4>
-              <br/>
-              
+              <br />
               IPI is a platform that allows users to buy or sell the rights to
               any piece of intellectual property, online, from anywhere in the
               world.
             </Tile>
-            <Button href="/Investor">Create Investor Account</Button>
-            <Button kind="secondary" href="/Seller">Create Rights Seller Account</Button>
+
+            <Button classname="primary" href="/Investor">
+              Create Investor Account
+            </Button>
+            <Button classname="secondary" kind="secondary" href="/Seller">
+              Create Rights Seller Account
+            </Button>
           </Form>
         </div>
       </Content>
